@@ -5,7 +5,7 @@ steps:
       [
         "build",
         "-t",
-        "asia-southeast2-docker.pkg.dev/submissionmlgc-kansput/submissionc/asclepius",
+        "asia-southeast2-docker.pkg.dev/submissionmlgc-kansput/submission/asclepius",
         ".",
       ]
 
@@ -14,7 +14,7 @@ steps:
     args:
       [
         "push",
-        "asia-southeast2-docker.pkg.dev/submissionmlgc-kansput/submissionc/asclepius",
+        "asia-southeast2-docker.pkg.dev/submissionmlgc-kansput/submission/asclepius",
       ]
 
   # Step 3: Deploy the image to Cloud Run
