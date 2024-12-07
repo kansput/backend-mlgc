@@ -5,7 +5,7 @@ steps:
       [
         "build",
         "-t",
-        "<sesuaikan dengan lokasi deploy firestore>-docker.pkg.dev/submissionmlgc-kansput/submission/asclepius",
+        "asia-southeast2-docker.pkg.dev/submissionmlgc-kansput/submission/asclepius",
         ".",
       ]
 
@@ -14,7 +14,7 @@ steps:
     args:
       [
         "push",
-        "<sesuaikan dengan lokasi deploy firestore>-docker.pkg.dev/submissionmlgc-kansput/submission/asclepius",
+        "asia-southeast2-docker.pkg.dev/submissionmlgc-kansput/submission/asclepius",
       ]
 
   # Step 3: Deploy the image to Cloud Run
@@ -25,7 +25,7 @@ steps:
       - "deploy"
       - "asclepius"
       - "--image"
-      - "<sesuaikan dengan lokasi deploy firestore>-docker.pkg.dev/submissionmlgc-kansput/submission/asclepius"
+      - "asia-southeast2-docker.pkg.dev/submissionmlgc-kansput/submission/asclepius"
       - "--platform"
       - "managed"
       - "--region"
@@ -34,4 +34,4 @@ steps:
 options:
   logging: CLOUD_LOGGING_ONLY
 images:
-  - "<sesuaikan dengan lokasi deploy firestore>-docker.pkg.dev/submissionmlgc-kansput/submission/asclepius"
+  - "asia-southeast2-docker.pkg.dev/submissionmlgc-kansput/submission/asclepius"
